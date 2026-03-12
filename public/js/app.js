@@ -1,9 +1,9 @@
 document.getElementById('nameForm').addEventListener('submit', function(e) {
-    e.preventDefault();  // Empêche la page de se recharger lors de la soumission du formulaire
+    e.preventDefault();  
   
     const userName = document.getElementById('userName').value;
     
-    fetch('/api/get-name', {  // URL sans slash final
+    fetch('/api/get-name', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -14,5 +14,6 @@ document.getElementById('nameForm').addEventListener('submit', function(e) {
     .then(data => {
       document.getElementById('result').innerText = `Name: ${data.name}, Emoji: ${data.emoji}`;
     })
-    .catch(err => console.error('Error:', err));  // En cas d'erreur
+    .catch(err => console.error('Error:', err)); 
   });
+
