@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Tech Exam</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -18,13 +19,14 @@
     this form doesn't let you receive data back and put into the <p id="result">.
     what do we need to do here with an external <script> 
     -->
-    <form id="nameForm" method="post" action="api/get-name/">
+    <form id="nameForm" >
       <label for="userName">Enter name:</label>
       <input id="userName" name="userName" placeholder="Enter a name (e.g., barry)" required>
       <input type="submit" value="Search"> 
     </form>
     <p id="result"></p>
   </div>
+  <script src="/js/app.js"></script>
 </body>
 
 </html>
