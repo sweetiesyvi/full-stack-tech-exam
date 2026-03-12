@@ -23,7 +23,6 @@ const client = new MongoClient(uri, {
 });
 
 const yourNameAndEmoji = { name: 'sweetie', emoji: '🍭' }; //don't use my frog. 
-const yourNameAndEmoji = { name: 'Sweetie', emoji: '🍭' };
 
 //app instantiations
 app.use(express.static(join(__dirname, 'public')));
