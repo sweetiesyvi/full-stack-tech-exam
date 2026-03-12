@@ -14,6 +14,7 @@
 | **Pull Request** | [https://github.com/your-username/your-repo-name/pull/1](https://github.com/your-username/your-repo-name/pull/1) | 
 | **Milestone** | [https://github.com/your-username/your-repo-name/milestone/1](https://github.com/your-username/your-repo-name/milestone/1) | 
 | **Successful CI/CD Action** | [https://github.com/your-username/your-repo-name/actions/runs/your-run-id](https://github.com/your-username/your-repo-name/actions/runs/your-run-id) | 
+| **ssh cmd to your gcp** | `ssh -i student-key bcumbie@your.static.external.ip` | 
 
 ---
 
