@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Tech Exam</title>
+</head>
+
+<body>
+  <h1>Full Stack Tech Exam</h1>
+  
+  <div>
+    <h2>Initialize Data</h2>
+    <a href="api/init-emoji" target="_blank">Click here to save emoji data</a>
+  </div>
+  
+  <div>
+    <h2>Search for Name</h2>
+    <form method="post" action="api/get-name/">
+      <label for="userName">Enter name:</label>
+      <input id="userName" name="userName" placeholder="Enter a name (e.g., barry)" required>
+      <input type="submit" value="Search"> 
+    </form>
+    <p id="result"></p>
+  </div>
+</body>
+
+</html>
