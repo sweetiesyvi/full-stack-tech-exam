@@ -26,7 +26,7 @@ jobs:
 
       - name: Deploy over SSH
         run: |
-          ssh -i ~/.ssh/id_rsa $ {{ secret.SSH_USER }}@${{ secret.SSH_HOST }} << 'EOF'
+          ssh -i ~/.ssh/id_rsa $ {{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
 
             cd ~/full-stack-tech-exam
 
