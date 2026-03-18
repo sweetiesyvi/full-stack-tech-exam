@@ -25,22 +25,16 @@ jobs:
           chmod 644 ~/.ssh/known_hosts
 
       - name: Deploy over SSH
-        env:
-          SSH_USER: ngulungudulcinee #${{ secrets.SSH_USER }}
-          SSH_HOST: 34.16.179.105 #${{ secrets.SSH_HOST }}
-          APP_DIR:  hum # ${{ vars.APP_DIR }}
-          PM2_NAME: hum # ${{ vars.PM2_NAME }}
         run: |
-          ssh -i ~/.ssh/id_rsa -T "$SSH_USER@$SSH_HOST" <<EOF
-            set -e
+          ssh -i ~/.ssh/id_rsa $ {{ secret.SSH_USER }}@${{ secret.SSH_HOST }} << 'EOF'
 
             cd ~/full-stack-tech-exam
 
             git pull
-            sudo npm ci
+            npm install
 
-            pm2 delete "$PM2_NAME" || true
-            pm2 start -f app.js --name "$PM2_NAME"
+            pm2 delete app || true
+            pm2 start app.mjs --name app
 
             pm2 save
           EOF
