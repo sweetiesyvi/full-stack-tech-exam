@@ -13,7 +13,7 @@
 | **Issue** | https://github.com/sweetiesyvi/full-stack-tech-exam/issues/1 | 
 | **Pull Request** | https://github.com/sweetiesyvi/full-stack-tech-exam/pulls | 
 | **Milestone** | https://github.com/sweetiesyvi/full-stack-tech-exam/milestone/1 | 
-| **Successful CI/CD Action** | https://github.com/sweetiesyvi/full-stack-tech-exam/actions/runs/23224171043 | 
+| **Successful CI/CD Action** | https://github.com/sweetiesyvi/full-stack-tech-exam/actions/runs/23309417160 | 
 | **ssh cmd to your gcp** | `ssh -i student-key bcumbie@34.16.179.105` | 
 
  
