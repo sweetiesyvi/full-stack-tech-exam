@@ -14,6 +14,6 @@
 | **Pull Request** | https://github.com/sweetiesyvi/full-stack-tech-exam/pulls | 
 | **Milestone** | https://github.com/sweetiesyvi/full-stack-tech-exam/milestone/1 | 
 | **Successful CI/CD Action** | https://github.com/sweetiesyvi/full-stack-tech-exam/actions/runs/23224171043 | 
-| **ssh cmd to your gcp** | `ssh -i student-key bcumbie@34.16.179.105` | 
+| **ssh cmd to your gcp** |  | 
 
  
