@@ -28,7 +28,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa $ {{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
 
-            cd ~/full-stack-tech-exam
+            cd /home/ngulungudulcinee/full-stack-tech-exam
 
             git pull
             npm install
