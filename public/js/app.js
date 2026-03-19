@@ -31,5 +31,5 @@ document.getElementById('nameForm').addEventListener('submit', async function (e
   } catch (err) {
     console.error('Error:', err);
     result.innerText = 'Server connection error.';
-  }
+  
 });
