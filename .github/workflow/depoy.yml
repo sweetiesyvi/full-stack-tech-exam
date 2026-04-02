@@ -1,0 +1,40 @@
+name: deploy.yml
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses:actions/checkout@v3
+        name: Prepare SSH
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          # safer than StrictHostKeyChecking=no
+          ssh-keyscan -H  34.16.179.105  >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy over SSH
+        run: |
+          ssh -i ~/.ssh/id_rsa $ {{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+
+            cd /home/ngulungudulcinee/full-stack-tech-exam
+
+            git pull
+            npm install
+
+           pm2 delete app || true
+            pm2 start app.mjs --name app
+
+            pm2 save
+          EOF

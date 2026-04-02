@@ -27,7 +27,7 @@ document.getElementById('nameForm').addEventListener('submit', async function (e
       return;
     }
 
-    result.innerText = `Name: ${data.name}, Emoji: ${data.emoji}`;
+   result.innerText = `Name: ${data.name}, Emoji: ${data.emoji}`;
   } catch (err) {
     console.error('Error:', err);
     result.innerText = 'Server connection error.';
