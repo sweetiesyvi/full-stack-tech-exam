@@ -6,7 +6,7 @@
 
 | Component | Link | 
 |-----------|------|
-| **GitHub Repository** | https://github.com/sweetiesyvi/full-stack-tech-exam | 
+| **GitHub Repository** | [https://github.com/sweetiesyvi/full-stack-tech-exam](https://github.com/sweetiesyvi/full-stack-tech-exam) | 
 | **GitHub Pages (docs/)** | https://sweetiesyvi.github.io/full-stack-tech-exam/ | 
 | **Dev Server (Render)** | https://full-stack-tech-exam-lkyj.onrender.com | 
 | **Production Server (GCP)** | http://34.16.179.105/| 
